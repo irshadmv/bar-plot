@@ -1,0 +1,21 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+y=['1','2','3','4','5']
+data1=np.random.random_integers(24,40,5)
+print(data1)
+tlabel=['A','B','C','D','E']
+fig=plt.figure(figsize=(10,10))
+plt.subplot(2,1,1)
+plt.bar(y,data1,tick_label=tlabel,color=['g','r'])
+plt.title('random temp graph')
+plt.ylabel('temp')
+
+data2=np.random.uniform(24.4,40,5)
+print(data2)
+tlabel=['A','B','C','D','E']
+plt.subplot(2,1,2)
+plt.bar(y,data2,tick_label=tlabel,color=['g','r'])
+plt.title('random temp graph')
+plt.ylabel('temp')
+
